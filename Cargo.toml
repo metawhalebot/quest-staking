@@ -1,0 +1,24 @@
+[package]
+name = "quest_staking"
+version = "0.1.0"
+description = "QUEST staking and locking program"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "quest_staking"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = []
+default = []
+idl-build = [
+    "anchor-lang/idl-build",
+    "anchor-spl/idl-build",
+]
+
+[dependencies]
+anchor-lang = "1.2.0"
+anchor-spl = "1.2.0"
